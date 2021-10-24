@@ -6,9 +6,17 @@
 
 
 <html>
+<head>
+	<title>PHP Store</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Lauren Champlin">
+	<link rel="stylesheet" href="Unit1_store.css">
+	
+</head>
 <body>
 
 <form action="welcome.php" method="post">
+        <br>
         <div id="personal">
                 First Name: <input type="text" name="fname" required><br>
                 Last Name: <input type="text" name="lname" required><br>
