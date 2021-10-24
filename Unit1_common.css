@@ -1,35 +1,38 @@
 header {
-        color: goldenrod;
+        color: hotpink;
         font-family: 'Franklin Gothic Medium';
-        font-size: 3vw;
-        background-color: lightsteelblue;
-        border: 0.5vw grey solid;
+        font-size: 1.5vw;
+        background-color: blue;
+        border: 0.25vw red solid;
+        text-align: center;
+        justify-content: center;
 }
 
 footer{
-        color: slategray;
+        color: gold;
         font-family: 'Franklin Gothic Medium';
         font-size: 1vw;
-        background-color: lightsteelblue;
-        border: 0.5vw grey solid;
+        background-color: blue;
+        border: 0.25vw red solid;
 }
 
-a {
+.topnav {
+        background-color: gold;
+}
+
+.topnav a {
         float: left;
         display: block;
-        color: lightsteelblue;
+        color: hotpink;
         background-color: inherit;
         text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
+        font-size: 15px;
 }
       
-a:hover {
+.topnav a:hover {
         background-color: goldenrod;
-        color: black;
 }
       
-a.active {
+.topnav a.active {
         color: white;
 }

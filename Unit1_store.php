@@ -24,10 +24,12 @@
                 </select>
                 Quantity: <input type="number" min=1 required><br>
                 <p>Would you like to round up to donate?</p>
-                <input type="radio" id="yes" name="donate" value="Yes">
-                <label for="Yes">Yes</label><br>
-                <input type="radio" id="css" name="donate" value="No">
-                <label for="No">Yes</label><br>
+                <span>
+                        <input type="radio" id="yes" name="donate" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="css" name="donate" value="No">
+                        <label for="No">No</label><br>
+                </span>
         </div>
         <input type="submit">
 </form>

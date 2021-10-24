@@ -11,7 +11,7 @@
 	
 </head>
 <header id="header"> 
-<h1>StoreName</h1>
+<h1>Candy Shop</h1>
 </header>
 <nav>
 <div class="topnav" id="myTopnav">
