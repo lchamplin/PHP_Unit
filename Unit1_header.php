@@ -2,6 +2,14 @@
 
 
 ?>
+
+<head>
+	<title>PHP Header</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Lauren Champlin">
+	<link rel="stylesheet" href="Unit1_common.css">
+	
+</head>
 <header id="header"> 
 <h1>StoreName</h1>
 </header>
