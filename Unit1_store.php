@@ -31,9 +31,9 @@
                 <br>
                 <select name="products" required>
                         <option value="" disabled selected hidden>Choose a product</option>
-                        <option value="coffee">Gummy Bears</option>
-                        <option value="tea">Chocolates</option>
-                        <option value="milk">Caramels</option>
+                        <option value="gummy_bears">Gummy Bears onclick=showImage(value)</option>
+                        <option value="chocolates">Chocolates</option>
+                        <option value="caramels">Caramels</option>
                 </select>
                 Quantity: <input type="number" min=1 max=100 required><br>
                 <p>Would you like to round up to donate?</p>
@@ -55,3 +55,12 @@
 </html>
 
  <?php include 'Unit1_footer.php';?>
+
+<script>
+        function showImage(name){
+                $("#image").attr("src", name+".jpg")
+        }
+    }
+});
+
+</script>
