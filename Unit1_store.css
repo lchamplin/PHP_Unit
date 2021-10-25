@@ -14,8 +14,9 @@ fieldset.personal, fieldset.product{
 }
 
 
-#image{
+.picture{
         float: right;
+        display: inline;
 }
 
 

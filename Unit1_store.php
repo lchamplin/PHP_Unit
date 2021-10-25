@@ -20,8 +20,8 @@
         <div class="personal">
         <fieldset class="personal">
                 <br>
-                First Name: <input type="text" name="fname" required><br>
-                Last Name: <input type="text" name="lname" required><br>
+                First Name: <input type="text" name="fname" required pattern="/^([a-zA-Z ']*)$/"><br>
+                Last Name: <input type="text" name="lname" required pattern="/^([a-zA-Z ']*)$/"><br>
                 E-mail: <input type="email" name="email" required><br>
         </fieldset>
         </div>
@@ -31,11 +31,11 @@
                 <br>
                 <select name="products" required>
                         <option value="" disabled selected hidden>Choose a product</option>
-                        <option value="gummy_bears" onclick=showImage(value)>Gummy Bears</option>
-                        <option value="chocolates">Chocolates</option>
-                        <option value="caramels">Caramels</option>
+                        <option value="gummy_bears" onclick=showImage(value)>Gummy Bears - $5</option>
+                        <option value="chocolates">Chocolates - $3</option>
+                        <option value="caramels">Caramels - $8</option>
                 </select>
-                Quantity: <input type="number" min=1 max=100 required><br>
+                Quantity: <input type="number" min=1 max=100  value=1 required><br>
                 <p>Would you like to round up to donate?</p>
                 <span>
                         <input type="radio" id="yes" name="donate" value="Yes">
@@ -48,9 +48,10 @@
         <input type="submit">
 </form>
 
-
-<img height=100 width=100 id="image">
-
+<div class="picture">
+        <p>Select a product to see it here</p>
+        <img height=100 width=100 id="image">
+</div>
 
 </body>
 </html>
