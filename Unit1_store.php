@@ -50,7 +50,7 @@
 
 <div class="picture">
         <p>Select a product to see it here</p>
-        <img height=100 width=100 id="image">
+        <img height=100 width=100 id="picture">
 </div>
 
 </body>
@@ -59,10 +59,12 @@
  <?php include 'Unit1_footer.php';?>
 
 <script>
-        function showImage(name){
-                $("#image").attr("src", name+".jpg")
-        }
-    }
+     $('select').on('change', function (e) {
+        console.log("product selected");
+        var optionSelected = $("option:selected", this);
+        var valueSelected = this.value;
+    $('#picture').attr("src", "images/"+valueSelected+".jpg");
 });
+
 
 </script>

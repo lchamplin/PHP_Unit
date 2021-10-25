@@ -15,8 +15,8 @@
 </header>
 <nav>
         <div class="topnav">
-                <a href="store.html">Candy</a>
-                <a href="store.html">Cupcakes</a>
-                <a href="store.html">Ice Cream</a>
+                <a href="Unit1_store.php">Candy</a>
+                <a href="Unit1_store.php">Cupcakes</a>
+                <a href="Unit1_store.php">Ice Cream</a>
         </div>
 </nav>
