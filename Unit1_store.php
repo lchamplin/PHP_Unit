@@ -31,7 +31,7 @@
                 <br>
                 <select name="products" required>
                         <option value="" disabled selected hidden>Choose a product</option>
-                        <option value="gummy_bears">Gummy Bears onclick=showImage(value)</option>
+                        <option value="gummy_bears" onclick=showImage(value)>Gummy Bears</option>
                         <option value="chocolates">Chocolates</option>
                         <option value="caramels">Caramels</option>
                 </select>
@@ -47,6 +47,7 @@
 </div>
         <input type="submit">
 </form>
+
 
 <img height=100 width=100 id="image">
 

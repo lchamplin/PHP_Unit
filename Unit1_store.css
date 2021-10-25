@@ -9,7 +9,6 @@ div.personal, div.product {
 fieldset.personal, fieldset.product{
         background-color: gold;
         border: 0.25vw red dashed;
-        display: inline;
 }
 
 
