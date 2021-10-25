@@ -1,18 +1,18 @@
 
-personal{
-        background-color: gold;
+div.personal, div.product { 
         border: 0.25vw red dashed;
         border-radius: 2px;
         display: inline;
         padding: 5px;
 }
 
-product{
+fieldset.personal, fieldset.product{
         background-color: gold;
-        border: 0.25vw red dashed;
-        border-radius: 2px;
-        display: inline;
-        padding: 5px;
+}
+
+
+#image{
+        float: right;
 }
 
 
