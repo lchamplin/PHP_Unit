@@ -15,15 +15,15 @@
 </head>
 <body>
 
-<form action="welcome.php" method="post">
+<form action="Unit1_process_order.php" method="post">
         <br>
-        <div class="personal">
+        <personal>
                 First Name: <input type="text" name="fname" required><br>
                 Last Name: <input type="text" name="lname" required><br>
                 E-mail: <input type="email" name="email" required><br>
-        </div>
+        </personal>
 
-        <div class="product">
+        <product>
                 <select name="products" required>
                         <option value="" disabled selected hidden>Choose a product</option>
                         <option value="coffee">Gummy Bears</option>
@@ -38,7 +38,7 @@
                         <input type="radio" id="css" name="donate" value="No" checked>
                         <label for="No">No</label><br>
                 </span>
-        </div>
+        </product>
         <input type="submit">
 </form>
 
