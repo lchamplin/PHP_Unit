@@ -4,11 +4,13 @@ div.personal, div.product {
         display: inline;
         padding: 10px;
         width: fit-content;
+        display: block;
 }
 
 fieldset.personal, fieldset.product{
         background-color: gold;
         border: 0.25vw red dashed;
+        width: fit-content;
 }
 
 
