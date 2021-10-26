@@ -15,7 +15,11 @@ fieldset.personal, fieldset.product{
 
 span.menu {
         display: inline;
-        
+
+}
+
+form{
+        width: 60%;
 }
 
 
