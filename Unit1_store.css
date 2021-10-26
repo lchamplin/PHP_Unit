@@ -13,10 +13,16 @@ fieldset.personal, fieldset.product{
         width: fit-content;
 }
 
+span.menu {
+        display: inline;
+        
+}
+
 
 .picture{
         float: right;
         display: inline;
+        width: 30%;
 }
 
 body{
