@@ -31,7 +31,6 @@ Total including tax (3%): $price with tax math
 <script>
         function onLoad(){
                 $("#line2").innerHTML = <?php $_POST["products"];?>
-
         }
         function get_product(str){
              console.log(str);
