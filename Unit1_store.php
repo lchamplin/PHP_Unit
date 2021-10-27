@@ -33,9 +33,9 @@
                 <br>
                 <select name="products" required>
                         <option value="" disabled selected hidden>Choose a product</option>
-                        <option value="Gummy Bears-5" onclick=showImage(value)>Gummy Bears - $5</option>
-                        <option value="Chocolates-3">Chocolates - $3</option>
-                        <option value="Caramels-8">Caramels - $8</option>
+                        <option id="gummy_bears" value="Gummy Bears-5" onclick=showImage(value)>Gummy Bears - $5</option>
+                        <option id="chocolates" value="Chocolates-3">Chocolates - $3</option>
+                        <option id="caramels" value="Caramels-8">Caramels - $8</option>
                 </select>
                 Quantity: <input type="number" name="quantity" min=1 max=100  value=1 required><br>
                 <p>Would you like to round up to donate?</p>
@@ -63,7 +63,7 @@
 <script>
      $('select').on('change', function (e) {
         var optionSelected = $("option:selected", this);
-        var valueSelected = this.value.split("-")[0];
+        var valueSelected = this.id;
     $('#picture').attr("src", "images/"+valueSelected+".jpg");
 });
 </script>
