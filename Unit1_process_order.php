@@ -9,7 +9,7 @@ $round_price = ceil($tax_price);
 
 $donation = "";
 if($_POST["donate"]){
-        $donation = "Total with donation: " . strval($round_price);
+        $donation = "Total with donation: $" . strval($round_price);
 }
 
 ?>
@@ -28,9 +28,9 @@ if($_POST["donate"]){
 <br>
 <br>
 <p>Thank you for your order, <?php echo $_POST["fname"]; ?> <?php echo $_POST["lname"]; ?> (<?php echo $_POST["email"]; ?>). </p>
-<p>You have selected <?php echo $_POST["quantity"]; ?>  <?php echo $product;?> @ <?php echo $price;?></p>
-<p>Subtotal: <?php echo $price;?></p>
-<p>Total including tax (3%): <?php echo $tax_price;?></p>
+<p>You have selected <?php echo $_POST["quantity"]; ?>  <?php echo $product;?> @ $<?php echo $price;?></p>
+<p>Subtotal: $<?php echo $price;?></p>
+<p>Total including tax (3%): $<?php echo $tax_price;?></p>
 <p><?php echo $donation ?></p>
 
 </body>

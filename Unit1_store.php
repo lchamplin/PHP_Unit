@@ -62,9 +62,8 @@
 
 <script>
      $('select').on('change', function (e) {
-        console.log("product selected");
         var optionSelected = $("option:selected", this);
-        var valueSelected = this.value;
+        var valueSelected = this.value.split("-")[0];
     $('#picture').attr("src", "images/"+valueSelected+".jpg");
 });
 </script>
