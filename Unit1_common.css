@@ -24,11 +24,9 @@ a{
 
 .topnav {
         background-color: gold;
-        top: 0px;
-        bottom: 0px;
-        right: 0px;
-        left: 0px;
         width: 100%;
+        align-content: flex-start;
+        height: fit-content;
 }
 
 .topnav a {
