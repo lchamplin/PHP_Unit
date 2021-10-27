@@ -22,8 +22,8 @@
         <div class="personal">
         <fieldset class="personal">
                 <br>
-                First Name: <input type="text" name="fname" required pattern="[a-zA-Z']"><br>
-                Last Name: <input type="text" name="lname" required pattern="[a-zA-Z']"><br>
+                First Name: <input type="text" name="fname" required pattern="[a-zA-Z'].{1,}"><br>
+                Last Name: <input type="text" name="lname" required pattern="[a-zA-Z'].{1,}"><br>
                 E-mail: <input type="email" name="email" required><br>
         </fieldset>
         </div>
