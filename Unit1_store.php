@@ -15,7 +15,6 @@
 
 </head>
 <body>
-        <span class ="menu">
 
 <form action="Unit1_process_order.php" method="post">
         <br>
@@ -54,7 +53,7 @@
         <p>Select a product to see it here</p>
         <img height=100 width=100 id="picture">
 </div>
-</span>
+
 </body>
 </html>
 
