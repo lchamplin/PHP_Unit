@@ -33,16 +33,16 @@
                 <br>
                 <select name="products" required>
                         <option value="" disabled selected hidden>Choose a product</option>
-                        <option value="gummy_bears" onclick=showImage(value)>Gummy Bears - $5</option>
-                        <option value="chocolates">Chocolates - $3</option>
-                        <option value="caramels">Caramels - $8</option>
+                        <option value="Gummy Bears-5" onclick=showImage(value)>Gummy Bears - $5</option>
+                        <option value="Chocolates-3">Chocolates - $3</option>
+                        <option value="Caramels-8">Caramels - $8</option>
                 </select>
                 Quantity: <input type="number" name="quantity" min=1 max=100  value=1 required><br>
                 <p>Would you like to round up to donate?</p>
                 <span>
-                        <input type="radio" id="yes" name="donate" value="Yes">
+                        <input type="radio" id="yes" name="donate" value=1>
                         <label for="Yes">Yes</label><br>
-                        <input type="radio" id="css" name="donate" value="No" checked>
+                        <input type="radio" id="css" name="donate" value=0 checked>
                         <label for="No">No</label><br>
                 </span>
 </fieldset>

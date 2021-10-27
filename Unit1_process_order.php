@@ -2,15 +2,13 @@
 
 
 <?php
-$product = explode(" - ", $_POST["products"])[0];
-$price = explode(" - ", $_POST["products"])[1];
-console.log(explode(" - ", $_POST["products"]));
-$float_price = floatval(substr($price, 1));
-$tax_price = $float_price * 1.03;
+$product = explode("-", $_POST["products"])[0];
+$price = floatval(explode("-", $_POST["products"])[1]);
+$tax_price = $price * 1.03;
 $round_price = ceil($tax_price);
 
 $donation = "";
-if(0 == strcmp($_POST["donate_yes"], "Yes")){
+if($_POST["donate"]){
         $donation = "Total with donation: " . strval($round_price);
 }
 
