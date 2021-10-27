@@ -21,7 +21,7 @@
         <br>
         <div class="personal">
         <fieldset class="personal">
-    <legend class="legend">Personal</legend>
+    <legend>Personal</legend>
                 <br>
                 First Name: * <input type="text" name="fname" required pattern="[a-zA-Z'].{1,}"><br>
                 Last Name: * <input type="text" name="lname" required pattern="[a-zA-Z'].{1,}"><br>
@@ -31,7 +31,7 @@
 
           <div class="product">
    <fieldset class="product">
-    <legend class="legend">Product</legend>
+    <legend>Product</legend>
                 <br>
                 <select name="products" required>
                         <option value="" disabled selected hidden>Choose a product*</option>
