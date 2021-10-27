@@ -28,6 +28,7 @@ span{
         float: right;
         display: inline;
         width: 30%;
+        height: 50%;
         top: 5px;
         background-color: blueviolet;
 }
