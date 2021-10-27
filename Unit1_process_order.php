@@ -14,8 +14,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
-<body>
-
+<body onload = "onLoad()">
+<br>
 <p> Thank you for your order, <?php echo $_POST["fname"]; ?> <?php echo $_POST["lname"]; ?> (<?php echo $_POST["email"]; ?>). </p>
 <p id="line2">You have selected <?php echo $_POST["quantity"]; ?>  get_product(<?php $_POST["products"];?>) @ get_price(<?php $_POST["products"];?>)<p>
 Subtotal: get_price(echo $_POST["products"];) 
@@ -29,8 +29,10 @@ Total including tax (3%): $price with tax math
 
 
 <script>
+        function onLoad(){
+                $("#line2").innerHTML = <?php $_POST["products"];?>
 
-        $("#line2").innerHTML = <?php $_POST["products"];?>
+        }
         function get_product(str){
              console.log(str);
              var words = str.slice(" - ");
