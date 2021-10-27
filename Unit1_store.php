@@ -23,9 +23,9 @@
         <fieldset class="personal">
     <legend>Personal</legend>
                 <br>
-                First Name*: <input type="text" name="fname" required pattern="[a-zA-Z'].{1,}"><br>
-                Last Name*: <input type="text" name="lname" required pattern="[a-zA-Z'].{1,}"><br>
-                E-mail*: <input type="email" name="email" required><br>
+                First Name: * <input type="text" name="fname" required pattern="[a-zA-Z'].{1,}"><br>
+                Last Name: * <input type="text" name="lname" required pattern="[a-zA-Z'].{1,}"><br>
+                E-mail: * <input type="email" name="email" required><br>
         </fieldset>
         </div>
 
@@ -39,17 +39,18 @@
                         <option id="chocolates" value="Chocolates-3">Chocolates - $3</option>
                         <option id="caramels" value="Caramels-8">Caramels - $8</option>
                 </select>
-                Quantity*: <input type="number" name="quantity" min=1 max=100  value=1 required><br>
-                <p>Would you like to round up to donate?*</p>
+                <br>
+                Quantity: * <input type="number" name="quantity" min=1 max=100  value=1 required><br>
+</fieldset>
+                <p>Would you like to round up to donate?</p>
                 <span>
                         <input type="radio" id="yes" name="donate" value=1>
                         <label for="Yes">Yes</label><br>
                         <input type="radio" id="css" name="donate" value=0 checked>
                         <label for="No">No</label><br>
                 </span>
-</fieldset>
 </div>
-        <input type="submit">Purchase</input>
+        <button type="submit">Purchase</button>
 </span>
 
 </form>
