@@ -53,7 +53,7 @@
 </form>
 <div class="picture">
         <p>Select a product to see it here</p>
-        <img height=100 width=100 id="picture">
+        <img id="picture">
 </div>
 </body>
 </html>

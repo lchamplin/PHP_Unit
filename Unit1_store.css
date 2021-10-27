@@ -26,6 +26,12 @@ fieldset.personal, fieldset.product{
         border: 0.25vw blue dashed;
 }
 
+img{
+        height: inherit;
+        width: inherit;
+        margin: 2px;
+}
+
 body {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
