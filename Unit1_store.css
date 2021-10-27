@@ -15,6 +15,12 @@ fieldset.personal, fieldset.product{
 }
 
 
+legend {
+        background-color: red;
+        color: blue;
+        padding: 3px 6px;
+}
+
 
 .picture{
         float: right;
