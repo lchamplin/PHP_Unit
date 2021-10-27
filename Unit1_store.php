@@ -17,6 +17,7 @@
 <body>
 
 <form action="Unit1_process_order.php" method="post">
+        <span>
         <br>
         <div class="personal">
         <fieldset class="personal">
@@ -47,13 +48,13 @@
 </fieldset>
 </div>
         <input type="submit">
-</form>
-
+</span>
 <div class="picture">
         <p>Select a product to see it here</p>
         <img height=100 width=100 id="picture">
 </div>
 
+</form>
 </body>
 </html>
 
