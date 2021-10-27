@@ -19,10 +19,11 @@ fieldset.personal, fieldset.product{
 .picture{
         float: right;
         display: inline;
-        width: 30%;
+        width: 100%;
         height: 50%;
-        top: 5px;
-        background-color: blueviolet;
+        background-color: pink;
+        padding: 5px;
+        border: 0.25vw blue dashed;
 }
 
 body {
