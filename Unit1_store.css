@@ -14,14 +14,6 @@ fieldset.personal, fieldset.product{
         width: fit-content;
 }
 
-span.menu {
-        display: inline;
-}
-
-span{
-        width: 50%;
-        display: inline;
-}
 
 
 .picture{

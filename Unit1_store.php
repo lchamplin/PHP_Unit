@@ -49,12 +49,12 @@
 </div>
         <input type="submit">
 </span>
+
+</form>
 <div class="picture">
         <p>Select a product to see it here</p>
         <img height=100 width=100 id="picture">
 </div>
-
-</form>
 </body>
 </html>
 
