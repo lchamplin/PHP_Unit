@@ -17,7 +17,7 @@
 <body>
 
 Thank you for your order, <?php echo $_POST["fname"]; ?> <?php echo $_POST["lname"]; ?> (<?php echo $_POST["email"]; ?>).
-You have selected <?php echo $_POST["quantity"]; ?> <?php get_product(echo $_POST["products"];) ?> @ get_price(echo $_POST["products"];) 
+You have selected <?php echo $_POST["quantity"]; ?>  get_product(<?php echo $_POST["products"];?>) @ get_price(<?php echo $_POST["products"];?>) 
 Subtotal: get_price(echo $_POST["products"];) 
 Total including tax (3%): $price with tax math
 (check bool) Total with donation: $price rounded up to next dollar

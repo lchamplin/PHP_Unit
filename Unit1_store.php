@@ -67,6 +67,4 @@
         var valueSelected = this.value;
     $('#picture').attr("src", "images/"+valueSelected+".jpg");
 });
-
-
 </script>
