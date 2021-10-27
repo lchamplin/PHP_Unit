@@ -6,7 +6,7 @@ $product = explode("-", $_POST["products"])[0];
 $quantity = floatval($_POST["quantity"]);
 $price = floatval(explode("-", $_POST["products"])[1]);
 $subtotal = $price * $quantity;
-$tax_price = $price * 1.03;
+$tax_price = $subtotal * 1.03;
 $round_price = ceil($tax_price);
 
 $donation = "";
