@@ -19,7 +19,7 @@ span.menu {
 }
 
 form{
-        width: 60%;
+        width: 50%;
         background-color: aqua;
 }
 
@@ -28,6 +28,8 @@ form{
         float: right;
         display: inline;
         width: 30%;
+        top: 5px;
+        background-color: blueviolet;
 }
 
 body{
