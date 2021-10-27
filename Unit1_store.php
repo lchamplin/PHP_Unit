@@ -63,7 +63,7 @@
 <script>
      $('select').on('change', function (e) {
         var optionSelected = $("option:selected", this);
-        var valueSelected = this.id;
+        var valueSelected = this.attr("id");
     $('#picture').attr("src", "images/"+valueSelected+".jpg");
 });
 </script>
