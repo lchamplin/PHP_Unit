@@ -16,8 +16,8 @@
 </head>
 <body>
 
-Thank you for your order, <?php echo $_POST["fname"]; ?> <?php echo $_POST["lname"]; ?> (<?php echo $_POST["email"]; ?>).
-You have selected <?php echo $_POST["quantity"]; ?>  get_product(<?php $_POST["products"];?>) @ get_price(<?php $_POST["products"];?>) 
+<p> Thank you for your order, <?php echo $_POST["fname"]; ?> <?php echo $_POST["lname"]; ?> (<?php echo $_POST["email"]; ?>). </p>
+<p id="line2">You have selected <?php echo $_POST["quantity"]; ?>  get_product(<?php $_POST["products"];?>) @ get_price(<?php $_POST["products"];?>)<p>
 Subtotal: get_price(echo $_POST["products"];) 
 Total including tax (3%): $price with tax math
 (check bool) Total with donation: $price rounded up to next dollar
@@ -29,13 +29,15 @@ Total including tax (3%): $price with tax math
 
 
 <script>
-     function get_product(str){
+
+        $("#line2").innerHTML = <?php $_POST["products"];?>
+        function get_product(str){
              console.log(str);
              var words = str.slice(" - ");
              return words[0];
-     }
-     function get_price(str){
+        }
+        function get_price(str){
              var words = str.slice(" - ");
              return words[1];
-     }
+        }
 </script>
