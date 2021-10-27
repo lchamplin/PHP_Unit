@@ -3,7 +3,9 @@
 
 <?php
 $product = explode("-", $_POST["products"])[0];
+$quantity = floatval($_POST["quantity"]);
 $price = floatval(explode("-", $_POST["products"])[1]);
+$subtotal = $price * $quantity;
 $tax_price = $price * 1.03;
 $round_price = ceil($tax_price);
 
@@ -29,7 +31,7 @@ if($_POST["donate"]){
 <br>
 <p>Thank you for your order, <?php echo $_POST["fname"]; ?> <?php echo $_POST["lname"]; ?> (<?php echo $_POST["email"]; ?>). </p>
 <p>You have selected <?php echo $_POST["quantity"]; ?>  <?php echo $product;?> @ $<?php echo $price;?></p>
-<p>Subtotal: $<?php echo $price;?></p>
+<p>Subtotal: $<?php echo $subtotal;?></p>
 <p>Total including tax (3%): $<?php echo $tax_price;?></p>
 <p><?php echo $donation ?></p>
 
