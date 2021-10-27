@@ -37,12 +37,12 @@
                         <option value="chocolates">Chocolates - $3</option>
                         <option value="caramels">Caramels - $8</option>
                 </select>
-                Quantity: <input type="number" min=1 max=100  value=1 required><br>
+                Quantity: <input type="number" name="quantity" min=1 max=100  value=1 required><br>
                 <p>Would you like to round up to donate?</p>
                 <span>
-                        <input type="radio" id="yes" name="donate" value="Yes">
+                        <input type="radio" id="yes" name="donate_yes" value="Yes">
                         <label for="Yes">Yes</label><br>
-                        <input type="radio" id="css" name="donate" value="No" checked>
+                        <input type="radio" id="css" name="donate_no" value="No" checked>
                         <label for="No">No</label><br>
                 </span>
 </fieldset>
