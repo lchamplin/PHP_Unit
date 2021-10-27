@@ -1,6 +1,17 @@
  <?php include 'Unit1_header.php';?>
-<?php
 
+
+<?php
+$product = explode(" - ", $_POST["products"])[0];
+$price = explode(" - ", $_POST["products"])[1];
+$float_price = floatval(substr($price, 1));
+$tax_price = $float_price * 1.03;
+$round_price = ceil($tax_price);
+
+$donation = "";
+if($_POST["donate_yes"]){
+        $donation = "Total with donation: " . strval($round_price);
+}
 
 ?>
 
@@ -16,29 +27,14 @@
 </head>
 <body onload = "onLoad()">
 <br>
-<p> Thank you for your order, <?php echo $_POST["fname"]; ?> <?php echo $_POST["lname"]; ?> (<?php echo $_POST["email"]; ?>). </p>
-<p id="line2">You have selected <?php echo $_POST["quantity"]; ?>  get_product(<?php $_POST["products"];?>) @ get_price(<?php $_POST["products"];?>)<p>
-Subtotal: get_price(echo $_POST["products"];) 
-Total including tax (3%): $price with tax math
-(check bool) Total with donation: $price rounded up to next dollar
+<p>Thank you for your order, <?php echo $_POST["fname"]; ?> <?php echo $_POST["lname"]; ?> (<?php echo $_POST["email"]; ?>). </p>
+<p>You have selected <?php echo $_POST["quantity"]; ?>  <?php echo $product;?> @ <?php echo $price;?></p>
+<p>Subtotal: <?php echo $price;?></p>
+<p>Total including tax (3%): <?php echo $tax_price;?></p>
+<p><?php echo $donation ?></p>
 
 </body>
 </html>
 
  <?php include 'Unit1_footer.php';?>
 
-
-<script>
-        function onLoad(){
-                $("#line2").innerHTML = <?php $_POST["products"];?>
-        }
-        function get_product(str){
-             console.log(str);
-             var words = str.slice(" - ");
-             return words[0];
-        }
-        function get_price(str){
-             var words = str.slice(" - ");
-             return words[1];
-        }
-</script>
